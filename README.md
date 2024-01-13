@@ -16,21 +16,28 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Getting Started with a Base Web Application
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This section is a guide for users or developers who are just starting with the web application. It aims to provide an overview of the essential features and functionalities implemented in the base version of the application.
 
-## Learn More
+Key Features:
 
-To learn more about Next.js, take a look at the following resources:
+Two Factor Authentication Element:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This feature enhances the security of the web application by implementing two-factor authentication (2FA). Two-factor authentication typically involves the user providing two different authentication factors, such as a password and a unique code sent to their mobile device.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Expiration of the Current User Password:
 
-## Deploy on Vercel
+The application is designed to enforce a password expiration policy. Users will be required to change their passwords after a certain period, promoting better security hygiene.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Recovery Password Process:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+In case a user forgets their password or is locked out of their account, there is a recovery password process in place. This process likely involves verifying the user's identity through predefined security questions, email verification, or other methods.
+
+Warning Password Expiration:
+
+To proactively remind users to update their passwords before they expire, the application generates warnings or notifications when the password is nearing its expiration date. This helps users maintain the security of their accounts.
+
+Basic Encryption Process:
+
+The application incorporates a basic encryption process to secure sensitive information, such as user credentials and other confidential data. Encryption ensures that data is transformed into a secure format, making it difficult for unauthorized individuals to access or interpret.
