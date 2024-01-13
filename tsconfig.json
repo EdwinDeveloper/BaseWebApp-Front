@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["use-callback-creator"],
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
